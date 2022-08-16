@@ -82,8 +82,3 @@ The karate HTML report gets generated automatically. The report gets generated i
 By using parallel runner class `BaseRunner` all the features under classpath would run in parallel and cucumber HTML report would be generated under `target/cucumber-html-reports`. Below is the sample cucumber HTML Report. <br/>
 
 ![Cucumber HTML Report](/src/test/java/util/images/cucumber-html-report.jpg)
-
-**Azure Pipelines Cucumber Reporter** <br/>
-We have used Azure DevOps extension that provides a task for publishing Cucumber report in a HTML format and embeds it into a Build and Release pages. This extension reads Cucumber run report saved in JSON format and then publish the results. This provides immediate preview of the test results within Azure Pipelines. <br/>
-
-![Cucumber HTML Report](/src/test/java/util/images/cucumber-publisher.jpg)
