@@ -8,10 +8,6 @@ import com.github.fge.jsonschema.main.JsonSchemaFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author Madiha Rehman
- * Created: 25 Aug 2021
- */
 // Schema comparison of actual with expected
 public class JSONSchemaUtil {
 
