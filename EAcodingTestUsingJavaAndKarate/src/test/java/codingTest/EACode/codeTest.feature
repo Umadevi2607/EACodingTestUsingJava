@@ -12,7 +12,7 @@ Feature: CodeTest at EA
     # Test Assertions
     * print 'Response is --------', response
     Then status 200
-    # Validate response type and response is empty
+    # Validate response body
     * string expectedResponseSchema = successResponseSchema
     * string actualResponse = response
     * def SchemaUtils = Java.type('util.JSONSchemaUtil')
