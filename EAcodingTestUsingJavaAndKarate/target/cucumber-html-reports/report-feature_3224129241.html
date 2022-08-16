@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: codingTest/EACode/codeTest.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>EACodingTest</td>
+      <td>16 Aug 2022, 23:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">codingTest/EACode/codeTest.feature</td>
+          <td      class="passed"    >16</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">16</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1076863625">1.076</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">codingTest/EACode/codeTest.feature</span>
+
+
+</div>
+
+        <div class="description indention">CodeTest at EA</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.059</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def successResponseSchema = read ('response_schema/successResponseSchema.json')</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2210145489.html">@test</a>
+</div>
+
+
+  <span class="lead-duration duration">1.017</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify the API returns 200 success response</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/festivals'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.501</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>23:54:05.931 request:
+1 &gt; GET https://eacp.energyaustralia.com.au/codingtest/api/v1/festivals
+1 &gt; Host: eacp.energyaustralia.com.au
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:54:06.327 response time in milliseconds: 374
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Server: nginx
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Powered-By: Express
+1 &lt; ETag: W/&quot;454-rjg7G3hoKl7AOXMwkx0u4Qm2qQU&quot;
+1 &lt; Date: Tue, 16 Aug 2022 13:54:06 GMT
+1 &lt; Connection: keep-alive
+1 &lt; X-Frame-Options: DENY
+1 &lt; Set-Cookie: AWSALB=x1IayikzXn4y74LfjWJKubhVQly/5oj8Dli+g8vqOex0C1KhUCJGUn81RGqMHyOGnKvk8P5+EeJYJLScpRYt5BIvZxkpUQdjRe2AJGb85qwcgblmrSahOqbcXvMX; Max-Age=1661262846000; Expires=Tue, 12 Dec 54665 19:34:06 GMT; Domain=eacp.energyaustralia.com.au
+1 &lt; Set-Cookie: AWSALBCORS=x1IayikzXn4y74LfjWJKubhVQly/5oj8Dli+g8vqOex0C1KhUCJGUn81RGqMHyOGnKvk8P5+EeJYJLScpRYt5BIvZxkpUQdjRe2AJGb85qwcgblmrSahOqbcXvMX; Max-Age=1661262846000; Expires=Tue, 12 Dec 54665 19:34:06 GMT; Domain=eacp.energyaustralia.com.au; Secure
+***
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'Response is --------', response</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>23:54:06.346 [print] Response is -------- [
+  {
+    &quot;name&quot;: &quot;LOL-palooza&quot;,
+    &quot;bands&quot;: [
+      {
+        &quot;name&quot;: &quot;Frank Jupiter&quot;,
+        &quot;recordLabel&quot;: &quot;Pacific Records&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Jill Black&quot;,
+        &quot;recordLabel&quot;: &quot;Fourth Woman Records&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Winter Primates&quot;,
+        &quot;recordLabel&quot;: &quot;&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Werewolf Weekday&quot;,
+        &quot;recordLabel&quot;: &quot;XS Recordings&quot;
+      }
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Small Night In&quot;,
+    &quot;bands&quot;: [
+      {
+        &quot;name&quot;: &quot;Squint-281&quot;,
+        &quot;recordLabel&quot;: &quot;Outerscope&quot;
+      },
+      {
+        &quot;name&quot;: &quot;The Black Dashes&quot;,
+        &quot;recordLabel&quot;: &quot;Fourth Woman Records&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Green Mild Cold Capsicum&quot;,
+        &quot;recordLabel&quot;: &quot;Marner Sis. Recording&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Yanke East&quot;,
+        &quot;recordLabel&quot;: &quot;MEDIOCRE Music&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Wild Antelope&quot;,
+        &quot;recordLabel&quot;: &quot;Marner Sis. Recording&quot;
+      }
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Trainerella&quot;,
+    &quot;bands&quot;: [
+      {
+        &quot;name&quot;: &quot;Wild Antelope&quot;,
+        &quot;recordLabel&quot;: &quot;Still Bottom Records&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Manish Ditch&quot;,
+        &quot;recordLabel&quot;: &quot;ACR&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Adrian Venti&quot;,
+        &quot;recordLabel&quot;: &quot;Monocracy Records&quot;
+      },
+      {
+        &quot;name&quot;: &quot;YOUKRANE&quot;,
+        &quot;recordLabel&quot;: &quot;Anti Records&quot;
+      }
+    ]
+  },
+  {
+    &quot;name&quot;: &quot;Twisted Tour&quot;,
+    &quot;bands&quot;: [
+      {
+        &quot;name&quot;: &quot;Summon&quot;,
+        &quot;recordLabel&quot;: &quot;Outerscope&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Auditones&quot;,
+        &quot;recordLabel&quot;: &quot;Marner Sis. Recording&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Squint-281&quot;
+      }
+    ]
+  },
+  {
+    &quot;bands&quot;: [
+      {
+        &quot;name&quot;: &quot;Critter Girls&quot;,
+        &quot;recordLabel&quot;: &quot;ACR&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Propeller&quot;,
+        &quot;recordLabel&quot;: &quot;Pacific Records&quot;
+      }
+    ]
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string expectedResponseSchema = successResponseSchema</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">string actualResponse = response</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def SchemaUtils = Java.type('util.JSONSchemaUtil')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert SchemaUtils.isValid(actualResponse, expectedResponseSchema)</span>
+
+  <span class="lead-duration duration">0.437</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseHeaders = karate.lowerCase(responseHeaders)</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contentType = karate.get(&quot;responseHeaders['content-type'][0]&quot;)</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'contentType is --------', contentType</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>23:54:06.831 [print] contentType is -------- application/json; charset=utf-8 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">assert contentType == 'application/json; charset=utf-8'</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match header Date != null</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match header Connection != null</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
