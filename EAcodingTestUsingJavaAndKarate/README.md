@@ -17,7 +17,6 @@ Below are the tools and components of Karate framework.
 |Maven|	Build and project management|
 |POM.XML|	A Project Object Model or POM is the fundamental unit of Maven. It is an XML file that contains information about the project, dependencies and configurations used by Maven to build the project|
 |IntelliJ|	Integrated development environment to create, debug and run the tests|
-|Gatling |  Gatling (and Scala) will be used for defining the load-model it re-uses Karate tests as performance tests executed by Gatling |
 
 
 **Karate Dependencies** <br/>
@@ -76,9 +75,7 @@ The project will generate "Karate HTML Report" as well as "Cucumber HTML Report"
 **Karate HTML Report** <br/>
 The karate HTML report gets generated automatically. The report gets generated in output directory `target/karate-reports` by default and this report is useful for visually verifying or troubleshooting the effectiveness of the test run. <br/>
 
-![Karate HTML Report](/src/test/java/util/images/karate-report.jpg)
 
 **Cucumber HTML Report** <br/>
-By using parallel runner class `BaseRunner` all the features under classpath would run in parallel and cucumber HTML report would be generated under `target/cucumber-html-reports`. Below is the sample cucumber HTML Report. <br/>
+By using parallel runner class `BaseRunner` all the features under classpath would run in parallel and cucumber HTML report would be generated under `target/cucumber-html-reports`. <br/>
 
-![Cucumber HTML Report](/src/test/java/util/images/cucumber-html-report.jpg)
