@@ -74,10 +74,9 @@ The project will generate "Karate HTML Report" as well as "Cucumber HTML Report"
 
 **Karate HTML Report** <br/>
 The karate HTML report gets generated automatically. The report gets generated in output directory `target/karate-reports` by default and this report is useful for visually verifying or troubleshooting the effectiveness of the test run. <br/>
-![Karate HTML Report](/src/test/java/util/images/karate-report.jpg)
-
+![Karate HTML Report](/src/test/java/util/images/karate-reports.jpg)
 
 **Cucumber HTML Report** <br/>
 By using parallel runner class `BaseRunner` all the features under classpath would run in parallel and cucumber HTML report would be generated under `target/cucumber-html-reports`. <br/>
-![Cucumber HTML Report](/src/test/java/util/images/cucumber-html-report.jpg)
+![Cucumber HTML Report](/src/test/java/util/images/cucumber-html-reports.jpg)
 
